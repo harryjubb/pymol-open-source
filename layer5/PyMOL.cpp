@@ -2393,7 +2393,7 @@ void PyMOL_DrawWithoutLock(CPyMOL * I)
       if (!glDebugMessageCallback) {
         printf("glDebugMessageCallback not available\n");
       } else {
-        glDebugMessageCallback(gl_debug_proc, NULL);
+        /* glDebugMessageCallback(gl_debug_proc, NULL); */
         glEnable(GL_DEBUG_OUTPUT);
       }
 #else
